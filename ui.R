@@ -13,7 +13,7 @@ shinyUI(pageWithSidebar(
                 max = 1000, 
                 value = 500)
 	,
-	submitButton("Update View")
+	actionButton("Update View")
   ),
 
   # Show a plot of the generated distribution
