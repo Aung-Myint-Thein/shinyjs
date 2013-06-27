@@ -16,7 +16,4 @@ shinyServer(function(input, output) {
     dist <- rnorm(input$obs)
     hist(dist)
   })
-  
-
-
 })
