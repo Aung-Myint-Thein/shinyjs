@@ -16,4 +16,15 @@ shinyServer(function(input, output) {
     dist <- rnorm(input$obs)
     hist(dist)
   })
+  
+  incrementButton <- function(b1, value = 0) {
+  tagList(
+    singleton(tags$head(tags$script(src = "js/increment.js"))),
+    tags$button(id = b1,
+                class = "increment btn",
+                type = "button",
+                as.character(value))
+  )
+}
+
 })
