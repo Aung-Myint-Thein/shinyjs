@@ -17,7 +17,6 @@ shinyUI(pageWithSidebar(
 
   # Show a plot of the generated distribution
   mainPanel(
-    plotOutput("distPlot"),
-	includeHTML("alert.js")
+    plotOutput("distPlot")
   )
 ))
