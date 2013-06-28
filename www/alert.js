@@ -1,6 +1,5 @@
-<script type="text/javascript">
-    var textBox = document.getElementById("foo");
-    textBox.onfocus = function() {
-        textBox.select();
-    };
-</script>
+$(document).on("click", "button.increment", function(evt){
+	var el = $(evt.target);
+	el.text(parseInt(el.text())+1);
+	el.trigger("change");
+});

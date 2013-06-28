@@ -1,5 +1,17 @@
 library(shiny)
 
+incrementButton <- function(inputID, value = 0) {
+	tagList(
+		singleton(tags$head(tags$script(src = "alert.js"))),
+		tags$button(
+			id=inputID,
+			class="increment btn",
+			type ="button",
+			as.character(value)
+		)
+	)
+}
+
 # Define UI for application that plots random distributions 
 shinyUI(pageWithSidebar(
   # Application title
@@ -13,12 +25,13 @@ shinyUI(pageWithSidebar(
                 max = 1000, 
                 value = 500)
 	,
-	actionButton("id1","Update View")
+	
+	incrementButton("thisthis")
   ),
 
   # Show a plot of the generated distribution
   mainPanel(
-    plotOutput("distPlot"),
-	tags$script(src = "alert.js")
+    plotOutput("distPlot")
+	
   )
 ))
