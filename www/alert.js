@@ -16,9 +16,9 @@ $.extend(incrementBinding,{
 	setValue:function(el, value){
 		$(el).text(value);
 	},
-	subscribe:function(el, tocallafterclick){
+	subscribe:function(el, callback){
 		$(el).on("change.incrementBinding", function(e){
-			tocallafterclick();
+			callback();
 		});
 	},
 	unsubscribe:function(el){
@@ -27,7 +27,3 @@ $.extend(incrementBinding,{
 });
 
 Shiny.inputBindings.register(incrementBinding);
-
-function tocallafterclick(){
-	alert("I am alert after you click!! and I am javascript");
-}
