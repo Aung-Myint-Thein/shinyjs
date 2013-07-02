@@ -34,7 +34,7 @@ shinyUI(pageWithSidebar(
 			<h3>Modal header</h3>
 		</div>
 		<div class="modal-body">
-		<p>One fine body…</p>
+		<p>One fine body</p>
 		</div>
 		<div class="modal-footer">
 			<a href="#" class="btn">Close</a>
