@@ -2,7 +2,7 @@ library(shiny)
 
 incrementButton <- function(inputID, value = 0) {
 	tagList(
-		singleton(tags$head(tags$script(src = "alert.js"),tags$script(src = "js/bootstrap.js"),tags$link(rel = 'stylesheet', type = 'text/css', href = 'css/bootstrap.min.css'))),
+		singleton(tags$head(tags$script(src = "alert.js"),tags$link(rel = 'stylesheet', type = 'text/css', href = 'css/bootstrap.min.css'))),
 		tags$button(
 			id=inputID,
 			class="increment btn btn-primary",			
