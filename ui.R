@@ -29,7 +29,7 @@ shinyUI(pageWithSidebar(
 	incrementButton("thisthis"),
 	HTML('
 	<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
-	<div id="myModal" class="modal hide fade">
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			<h3>Modal header</h3>
@@ -38,7 +38,7 @@ shinyUI(pageWithSidebar(
 		<p>One fine body</p>
 		</div>
 		<div class="modal-footer">
-			<a href="#" class="btn">Close</a>
+			<a class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
 			<a href="#" class="btn btn-primary">Save changes</a>
 		</div>
 	</div>
