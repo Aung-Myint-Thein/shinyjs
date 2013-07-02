@@ -27,3 +27,5 @@ $.extend(incrementBinding,{
 });
 
 Shiny.inputBindings.register(incrementBinding);
+
+$('#tooltip').tooltip()
