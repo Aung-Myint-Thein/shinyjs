@@ -27,23 +27,7 @@ shinyUI(pageWithSidebar(
 	,
 	
 	incrementButton("thisthis"),
-	HTML('
-	<a href="#" id="tooltip" data-placement="top" data-toggle="tooltip" title="first tooltip">hover over me</a>
-	<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
-	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h3>Modal header</h3>
-		</div>
-		<div class="modal-body">
-		<p>One fine body</p>
-		</div>
-		<div class="modal-footer">
-			<a class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
-			<a href="#" class="btn btn-primary">Save changes</a>
-		</div>
-	</div>
-	')
+	HTML('<a href="#" id="tooltip" data-placement="top" data-toggle="tooltip" title="first tooltip">hover over me</a>')
   ),
 
   # Show a plot of the generated distribution
