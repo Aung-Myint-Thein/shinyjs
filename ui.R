@@ -5,7 +5,7 @@ incrementButton <- function(inputID, value = 0) {
 		singleton(tags$head(tags$script(src = "alert.js"),tags$link(rel = 'stylesheet', type = 'text/css', href = 'css/bootstrap.min.css'))),
 		tags$button(
 			id=inputID,
-			class="increment btn",			
+			class="increment btn btn-primary",			
 			as.character(value)
 		)
 	)
