@@ -2,7 +2,7 @@ library(shiny)
 
 incrementButton <- function(inputID, value = 0) {
 	tagList(
-		singleton(tags$head(tags$script(src = "alert.js"))),
+		singleton(tags$head(tags$script(src = "alert.js"),tags$link(rel = 'stylesheet', type = 'text/css', href = 'css/bootstrap.min.css'))),
 		tags$button(
 			id=inputID,
 			class="increment btn",			
@@ -13,8 +13,6 @@ incrementButton <- function(inputID, value = 0) {
 
 # Define UI for application that plots random distributions 
 shinyUI(pageWithSidebar(
-  
-
   
   # Application title
   headerPanel("Hello Shiny!"),
