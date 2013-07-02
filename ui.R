@@ -28,7 +28,7 @@ shinyUI(pageWithSidebar(
 	
 	incrementButton("thisthis"),
 	HTML('
-	<a href="#" id="tooltip" data-toggle="tooltip" title="first tooltip">hover over me</a>
+	<a href="#" id="tooltip" data-placement="top" data-toggle="tooltip" title="first tooltip">hover over me</a>
 	<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-header">
