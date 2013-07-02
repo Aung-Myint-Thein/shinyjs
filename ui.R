@@ -28,7 +28,8 @@ shinyUI(pageWithSidebar(
 	
 	incrementButton("thisthis"),
 	HTML('
-	<div class="modal hide fade">
+	<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+	<div id="myModal" class="modal hide fade">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			<h3>Modal header</h3>
