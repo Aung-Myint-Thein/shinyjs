@@ -32,7 +32,7 @@ shinyUI(pageWithSidebar(
   # Show a plot of the generated distribution
   mainPanel(
     plotOutput("distPlot"),
-	HTML('<div><a href="#" id="tooltip" data-placement="top" data-toggle="tooltip" title="first tooltip">hover over me</a></div>')
+	HTML('<div><a href="#" id="tooltip" data-toggle="tooltip" title="first tooltip">hover over me</a></div>')
 	
   )
 ))
