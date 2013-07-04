@@ -28,6 +28,8 @@ $.extend(incrementBinding,{
 
 Shiny.inputBindings.register(incrementBinding);
 
+var img = '<img src="https://si0.twimg.com/a/1339639284/images/three_circles/twitter-bird-white-on-blue.png" />';
+
 $(function(){
 	$('#tooltip').tooltip();
 	
