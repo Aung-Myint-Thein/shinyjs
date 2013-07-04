@@ -33,5 +33,5 @@ var img = '<img src="https://si0.twimg.com/a/1339639284/images/three_circles/twi
 $(function(){
 	$('#tooltip').tooltip();
 	
-	$("#blob").popover({trigger: 'click', html: 'true', title: 'Look!  A bird image!', content: img });
+	$("#blob").popover({trigger: 'hover', html: 'true', title: 'Look!  A bird image!', content: img });
 	});
