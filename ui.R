@@ -26,13 +26,13 @@ shinyUI(pageWithSidebar(
                 value = 500)
 	,
 	
-	incrementButton("thisthis"),
-	HTML('<div><a href="#" id="tooltip" data-placement="top" data-toggle="tooltip" title="first tooltip">hover over me</a></div>')
+	incrementButton("thisthis")
   ),
 
   # Show a plot of the generated distribution
   mainPanel(
-    plotOutput("distPlot")
+    plotOutput("distPlot"),
+	HTML('<div><a href="#" id="tooltip" data-placement="top" data-toggle="tooltip" title="first tooltip">hover over me</a></div>')
 	
   )
 ))
