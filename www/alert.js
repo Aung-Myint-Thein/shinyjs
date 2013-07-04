@@ -30,4 +30,6 @@ Shiny.inputBindings.register(incrementBinding);
 
 $(function(){
 	$('#tooltip').tooltip();
+	
+	$("#blob").popover({trigger: 'hover', html: 'true', title: 'Look!  A bird image!', content: img });
 	});
