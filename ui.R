@@ -33,7 +33,7 @@ shinyUI(pageWithSidebar(
   mainPanel(
     plotOutput("distPlot"),
 	HTML('<div><a href="#" id="tooltip" data-toggle="tooltip" title="first tooltip">hover over me</a></div>'),
-	HTML('<a href="#" id="blob" class="btn large primary" rel="popover" style="margin-top: 300px">hover for popover</a>')
+	HTML('<a href="#" id="blob" class="btn large primary" rel="popover">hover for popover</a>')
 	
   )
 ))
