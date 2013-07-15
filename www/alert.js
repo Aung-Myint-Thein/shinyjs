@@ -35,5 +35,5 @@ $(function(){
 	
 	$("#blob").popover({trigger: 'hover', html: 'true', title: 'Look!  A bird image!', content: img });
 	
-	$("#thisthis").popover({trigger: 'hover', html: 'true', title: 'Look!  A bird image!', content: img });
+	$("#thisthis").tooltip({trigger: 'hover', title: 'This is the tooltip message.' });
 	});
