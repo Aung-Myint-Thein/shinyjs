@@ -211,7 +211,7 @@
 				
 				<div class="row-fluid">
 					<div class="span6 offset3">
-						<button class="btn btn-primary pull-right" type="button">Next Question <i class="icon-chevron-right"></i></button>
+						<button id="thisthis" class="btn btn-primary pull-right" type="button">Next Question <i class="icon-chevron-right"></i></button>
 					</div>
 				</div>
                 </div>
@@ -225,9 +225,15 @@
 	<script href="bootstrap/js/bootstrap.min.js"></script>
 	
 	<script type="text/javascript">
+	
 	$(function(){
-	$('#tooltip').tooltip();
+		$("#thisthis").tooltip({
+			trigger: 'hover', 
+			title: 'This is the tooltip message.', 
+			placement: 'right'
+		});
 	});
+	
 	</script>
 	
   </body>
