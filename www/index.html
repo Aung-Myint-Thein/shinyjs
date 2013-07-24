@@ -10,6 +10,9 @@
     <!-- Le styles -->
 	<script src="shared/jquery.js" type="text/javascript"></script>
 	<script src="shared/shiny.js" type="text/javascript"></script>
+	
+	<script href="bootstrap/js/bootstrap.min.js"></script>
+	
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
@@ -21,6 +24,8 @@
 			title: 'This is the tooltip message.', 
 			placement: 'right'
 		});
+		
+		$('#tooltip').tooltip();
 	});
 	
 	</script>
@@ -174,6 +179,8 @@
 								<p>
 								<h2>INSEAD eLab profilling tool</h2>
 								<div id="questions_answered"> Number of questions answered : 8 out of 16</div>
+								
+								<div><a href="#" id="tooltip" data-toggle="tooltip" title="tooltip message will be here.">hover over me</a></div>
 								
 								</p>
                               <div class="progress progress-info">
